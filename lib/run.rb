@@ -6,7 +6,10 @@ require_relative 'transfer.rb'
 
 steve = BankAccount.new("Steve")
 jamie = BankAccount.new("Jamie")
-transfer = Transfer.new(steve, jamie, 51)
+bob = BankAccount.new("Bob")
+guy = BankAccount.new("Guy")
+transfer = Transfer.new(steve, jamie, 50)
+same_transfer = Transfer.new(steve, jamie, 50)
 
 binding.pry
 
